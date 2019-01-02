@@ -1,0 +1,14 @@
+.profilePhoto{
+    width:200px;
+    height:auto;
+    display:inline-block;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 1rem;
+}
+.CV h2{
+    margin: 0;
+    text-align: center;
+}
+.CV p{
+    padding: 0 1rem;
+}

@@ -1,10 +1,138 @@
+
+.hide{
+    transform:translateY(-10rem);
+}
 .mobile{
-   background-color: black;
-   width:100%;
+    background-color:  rgb(50, 61, 160);
+    position:fixed;
+    width:100%;
+    height:2.4rem;
+    transition:all ease-in-out 0.5s;
    
+
+}
+.mobileLink{
+    text-decoration: none;
+    color:rgba(212, 212, 212, 0.952);
+    margin: 0.3rem 1rem;
+    padding:0.4rem 1rem;
+    border-radius: 10px;
+    display:inline-block;
+  
+}
+.mobile h1{
+    padding: 0.3rem 1rem;;
+    font-size: 1.5rem;
+    margin:0;
+    color:rgba(212, 212, 212, 0.952);
+    display: block;
+}
+.mobileLink:hover{
+    background-color: rgb(39, 18, 156);
+}
+.mobileLink_active{
+    background-color: rgb(39, 18, 156);
+    color:white;
+}
+.mobileMenuActive{
+    height:5rem;
+}
+.mobilePlaceHolder{
+    background-color: rgb(50, 61, 160);
+    width:100%;
+    height:2.5rem;
+    position:static;
 }
 
+
 .desktop{
-    background-color: orange;
+    background-color: rgb(50, 61, 160);
+    position:fixed;
+    height:3.5rem;
     width:100%;
+    transition:transform ease-in-out 0.5s;
+}
+.desktop h1{
+    padding: 0.3rem 1rem;;
+    margin:0;
+    color:rgba(212, 212, 212, 0.952);
+    display: inline-block;
+
+}
+.desktop a{
+    text-decoration: none;
+    color:rgba(212, 212, 212, 0.952);
+    padding:0.2rem 1rem;
+    border-radius: 10px;
+}
+.desktop a:hover{
+    background-color: rgb(39, 18, 156);
+}
+.desktop .active{
+    background-color: rgb(39, 18, 156);
+    color:white;
+}
+
+.desktopPlaceHolder{
+    background-color: rgb(50, 61, 160);
+    width:100%;
+    height:3.5rem;
+    position:static;
+}
+
+
+.enclosingDiv{
+	display:inline-block;
+	position: absolute;
+	top:0px;
+	right:0;
+	color:gray;
+	width:5rem;
+	height:2rem;
+}
+.topDiv{
+	position:absolute;
+	top:5%;
+	left:0;
+	width:35%;
+	margin: 5%;
+	height: 7%;
+	background-color:white;
+
+}
+
+.middleDiv{
+	position:absolute;
+	top:33%;
+	left:0;
+	width:35%;
+	margin: 5%;
+	height: 8%;
+	background-color:white;
+}
+.bottomDiv{
+	position:absolute;
+	top:60%;
+	left:0;
+	width:35%;
+	margin: 5%;
+	height: 7%;
+	background-color:white;
+}
+
+
+.topDiv_X_state{
+	transform: rotate(45deg);
+	transform-origin: top left;
+	transition: transform 0.5s ease-in-out;
+}
+.middleDiv_X_state{
+	transform: scale(0);
+	transform-origin: center left;
+	transition: transform 0.5s ease-in-out;
+}
+.bottomDiv_X_state{
+	transform: rotate(-45deg) translateY(2px) translateX(-1px) scaleX(0.99);
+	transform-origin: bottom left;
+	transition: transform 0.5s ease-in-out;
 }
