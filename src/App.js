@@ -7,6 +7,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 import NavBar from './Containers/Navbar';
 import MyCv from './Components/MyCv';
+import Contact from './Components/Contact';
 
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
     return ([
       <NavBar key="nav"/>,
       <Route path="/" exact render={()=>{return <MyCv></MyCv>}} key="cvLink"/>,
-      <Route path="/contact" exact key="contactLink" render={()=>{return <h1>Send email logic here</h1>}}/>,
+      <Route path="/contact" exact key="contactLink" render={()=>{return <Contact/>}}/>,
       <footer></footer>
     ]
     );
